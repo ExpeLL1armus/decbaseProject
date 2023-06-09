@@ -1,0 +1,68 @@
+.interior {
+    min-height: 800px;
+    // padding-top: 100px;
+
+    // Header Main
+
+    &-main {
+        margin-top: 90px;
+
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        // &__text {
+
+        // }
+
+        &__characteristic {
+            margin-top: 50px;
+            font-size: 16px;
+            color: #646464;
+            text-transform: uppercase;
+        }
+
+        &__header {
+            margin-top: 17px;
+            font-family: $font-header;
+            font-size: 60px;
+            font-weight: 600;
+            line-height: 60px;
+            color: #212121;
+        }
+
+        &__descr {
+            font-size: 15px;
+            color: #646464;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            line-height: 23px;
+        }
+
+        &__link {
+            @include link;
+        }
+
+        &__design {
+            position: relative;
+            .interior-main__img {
+                width: 520px;
+                height: 470px;
+                border-radius: 25% 0;
+            }
+        }
+
+        &__design::after {
+            position: absolute;
+            content: "";
+            border: 2px solid #B0855B;
+            border-radius: 25% 0;
+            z-index: -1;
+            top: 25px;
+            left: 25px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

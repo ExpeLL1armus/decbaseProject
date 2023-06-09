@@ -1,0 +1,103 @@
+.testimonials {
+    min-height: 800px;
+    padding-top: 140px;
+
+    &-text {
+        text-align: center;
+        color: #646464;
+        font-weight: 500;
+    }
+
+    &-header {
+        margin-top: 10px;
+        text-align: center;
+        font-family: $font-header;
+        font-size: 40px;
+    }
+
+    .testimonials__list {
+        margin-top: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .testimonials__item {
+        position: relative;
+        display: flex;
+      
+        // &:not(:last-child) {
+        //   margin-right: 122px;
+        // }
+      
+        &::before {
+          content: '';
+          position: absolute;
+          top: -35%;
+          left: 10%;
+      
+          width: 500px;
+          height: 200px;
+      
+          background: #ffffff;
+          box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+          border-radius: 70px 0px;
+      
+          z-index: -4;
+        }
+
+        .quote {
+            position: absolute;
+            top: -15px;
+            right: 10px;
+        }
+    }
+
+    .box-img {
+        position: relative;
+        width: 115px;
+        height: 120px;
+      
+        overflow: hidden;
+        border-top-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+
+        .testimonials__item--img {
+            border-top-left-radius: 35px;
+            border-bottom-right-radius: 35px;
+        }
+    }
+
+    .testimonials__item--img {
+        max-width: 115px;
+    }
+      
+    .box-content {
+        padding-left: 30px;
+      
+        width: 434px;
+    }
+      
+    .testimonials__item--title {
+        margin-bottom: 7px;
+      
+        color: #212121;
+      
+        font-weight: 700;
+        font-size: 20px;
+        // line-height: 1.375;
+    }
+      
+    .testimonials__item--sub {
+        color: #646464;
+      
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .testimonials__item--text {
+        font-size: 14px;
+        color: #646464;
+        line-height: 24px;
+    }
+}

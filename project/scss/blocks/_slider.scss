@@ -1,0 +1,37 @@
+.swiper-container {
+    position: relative;
+}
+
+.arrows {
+    display: flex;
+    gap: 40px;
+    position: absolute;
+    // top: 0;
+    right: 0;
+
+    .slide-prev {
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .slide-next {
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: #37806B;
+        box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+    }
+}

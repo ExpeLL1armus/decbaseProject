@@ -1,0 +1,89 @@
+.whatWeDo {
+    min-height: 925px;
+
+    &-text {
+        margin-bottom: 5px;
+        font-size: 16px;
+        color: #646464;
+        text-transform: uppercase;
+    }
+
+    &-header {
+        margin-bottom: 50px;
+        font-family: $font-header;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    &-btns {
+        margin-bottom: 70px;
+
+        button {
+            display: inline-block;
+            height: 40px;
+            width: 190px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        
+        .whatWeDo-btn {
+            color: #fff;
+            background-color: #37806B;
+            border-radius: 20px;
+        }
+
+        button:not(:last-child) {
+            margin-right: 45px;
+        }
+
+        .whatWeDo-btn.active {
+            background-color: #FFFFFF;
+            color: #37806B;
+            border: 3px solid #37806B;
+          }
+    }
+
+    .items {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 50px;
+    }
+
+    .card {
+        display: flex;
+        gap: 15px;
+        margin-top: 30px;
+        justify-content: space-between;
+        background-color: #ffffff;
+        padding: 20px 20px 0 25px;
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+        border-radius: 60px 0px;
+
+        .image-container {
+            padding-top: 4px;
+        }
+
+        &-container {
+            .item-name {
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+            .item-descr {
+                font-size: 14px;
+            }
+        }
+
+        img {
+            max-width: none;
+            width: 43px;
+            height: 33px;
+            object-fit: contain
+        }
+    }
+
+    .hide {
+        display: none;
+    }
+}

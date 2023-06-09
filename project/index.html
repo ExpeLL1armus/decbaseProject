@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decbase</title>
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/main.css">
+    
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="header-nav">
+                    <!-- <div class="logo"> -->
+                    <a href="">
+                        <img src="./img/header/logo.png" alt="logo" class="img-logo">
+                    </a>
+                    <!-- </div> -->
+                    <div class="header-nav__links">
+                        <div class="header-nav__list">
+                            <ul>
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="#">PROJECT</a></li>
+                                <li><a href="#">SERVICES</a></li>
+                                <li><a href="#">ABOUT</a></li>
+                                <li><a href="#">BLOG</a></li>
+                                <li><a href="#">SHOP</a></li>
+                                <li><a href="#">CONTACT</a></li>
+                                <!-- <li><a class="header-nav__btn" href="#">Sign Up</a></li> -->
+                            </ul>
+                        </div>
+                        <!-- <div class="header-nav__btn"> -->
+                        <a href="#" class="header-nav__btn">Sign Up</a>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="progress-bar"></div>
+    </header>
+
+    <main>
+        <section class="interior">
+          <div class="interior-main">
+            <div class="container">
+                <div class="interior-main__wrapper">
+                    <div class="interior-main__text">
+                        <h5 class="interior-main__characteristic">
+                            MODERN INTERIOR
+                        </h5>
+                        <h2 class="interior-main__header">
+                            Create Your<br>
+                            Interior Design.
+                        </h2>
+                        <div class="interior-main__descr">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim<br>
+                            veniam, quis nostrud exercitation.
+                        </div>
+                        <a href="#" class="interior-main__link">CONTACT</a>
+                    </div>
+
+                    <div class="interior-main__design">
+                        <img src="./img/header/header-img.jpg" class="interior-main__img" alt="interior-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="whatWeDo">
+          <div class="container">
+            <h5 class="whatWeDo-text">
+              WHAT WE DO
+            </h5>
+            <h2 class="whatWeDo-header">
+              Our Service
+            </h2>
+            <div class="whatWeDo-btns">
+              <button class="whatWeDo-btn" onclick="filterProduct('all')" data-filter="all">
+                ALL
+              </button>
+              <button class="whatWeDo-btn" onclick="filterProduct('Interior')" data-filter="Interior">
+                INTERIOR DESIGN
+              </button>
+              <button class="whatWeDo-btn" onclick="filterProduct('Architecture')" data-filter="Architecture">
+                ARCHITECTURE
+              </button>
+              <button class="whatWeDo-btn" onclick="filterProduct('Planning')" data-filter="Planning">
+                PLANNING
+              </button>
+            </div>
+            <div class="items">
+          
+            </div>
+          </div>
+        </section>
+
+        <section class="about-us">
+            <div class="container">
+                <div class="about-us__wrapper">
+                    <div class="about-us__design">
+                        <img src="./img/about-us/about-us.jpg" alt="" class="about-us__img">
+                    </div>
+
+                    <div class="about-us__text">
+                        <h5 class="about-us__characteristic">
+                            ABOUT US
+                        </h5>
+                        <h2 class="about-us__header">
+                            Interioris The Will<br>
+                            of An Epoch Mextreo
+                        </h2>
+                        <div class="about-us__descr">
+                            There are many variations of passages of Lorem Ipsum available,<br>
+                            but the majority have suffered alteration in some form injected<br>
+                            humour, or randomised words which don't look even slightly<br>
+                            believable.If you are going to use a passage of Lorem Ipsum,<br>
+                            sure there isn't anything embarrassing hidden the middleof text.<br>
+                            All the Lorem Ipsum generators on the Internettend to repeat<br>
+                            predefined chunks as necessary,making this the first true<br>
+                            generator on the Internet.
+                        </div>
+                        <a href="#" class="about-us__link">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="history">
+            <div class="container">
+                <div class="history-wrapper">
+                    <div class="history-descr">
+                        <div class="history-img__number">
+                            <img src="./img/history/history-img__number.png" alt="20years">
+                        </div>
+                        <h2 class="history-header">
+                            Years Of Successful<br>
+                            Working<br>
+                            The Market
+                        </h2>
+                        <a href="#" class="history-link">READ MORE</a>
+                    </div>
+                    <div class="history-design">
+                        <img src="./img/history/history-img__main.jpg" class="history-img" alt="main-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="work">
+            <div class="container">
+                <h2 class="work-title">
+                    3000+ Completed Work<br> 
+                    Which WE have Successfully Done
+                </h2>
+
+                <ul class="work-list">
+                    <li class="work-item">
+                        <p class="work-item__num">980</p>
+                        <p class="work-item__text">Project</p>
+
+                        <div class="line-decor">
+                            <span class="line-decor__1"></span>
+                            <span class="line-decor__2"></span>
+                            <span class="line-decor__3"></span>
+                        </div>
+                    </li>
+
+                    <li class="work-item">
+                        <p class="work-item__num">520</p>
+                        <p class="work-item__text">Happy Client</p>
+                        <div class="line-decor">
+                            <span class="line-decor__1--rov"></span>
+                            <span class="line-decor__2--rov"></span>
+                            <span class="line-decor__3--rov"></span>
+                        </div>
+                    </li>
+
+                    <li class="work-item">
+                        <p class="work-item__num">330</p>
+                        <p class="work-item__text">Winners</p>
+
+                        <div class="line-decor">
+                            <span class="line-decor__1"></span>
+                            <span class="line-decor__2"></span>
+                            <span class="line-decor__3"></span>
+                        </div>
+                    </li>
+
+                    <li class="work-item">
+                        <p class="work-item__num">120</p>
+                        <p class="work-item__text">Recoment</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+              <div class="testimonials-wrapper">
+                <h5 class="testimonials-text">
+                  TESTIMONIALS
+                </h5>
+                <h2 class="testimonials-header">
+                  Client says about us
+                </h2>
+                <div class="swiper-container">
+                  <div class="arrows">
+                    <div class="slide-prev"><i class="fa-solid fa-chevron-left" style="color: #646464;"></i></div>
+                    <div class="slide-next"><i class="fa-solid fa-chevron-right" style="color: #fff;"></i></div>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <ul class="testimonials__list">
+                        <li class="testimonials__item">
+                          <div class="box-img">
+                            <img
+                              class="testimonials__item--img"
+                              src="/img/testimonials/first-img.jpg"
+                              alt="Louis Saville"
+                              width="130"
+                            />
+                          </div>
+            
+                          <div class="box-content">
+                            <h3 class="testimonials__item--title">
+                              Louis Saville1 <span class="testimonials__item--sub">/CEO at Google inc</span>
+                            </h3>
+                            <p class="testimonials__item--text">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing<br> 
+                              elit, sed do eiusmod tempor incididunt ut labore<br> 
+                              et dolore magna aliqua.
+                            </p>
+                          </div>
+                          <img src="/img/testimonials/quote.svg" alt="" class="quote">
+                        </li>
+            
+                        <li class="testimonials__item">
+                          <div class="box-img">
+                            <img
+                              class="testimonials__item--img"
+                              src="/img/testimonials/second-img.jpg"
+                              alt="Rekha Varadwaz"
+                              width="130"
+                            />
+                          </div>
+            
+                          <div class="box-content">
+                            <h3 class="testimonials__item--title">
+                              Rekha Varadwaz1 <span class="testimonials__item--sub">/Manager at Nike inc</span>
+                            </h3>
+                            <p class="testimonials__item--text">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing<br> 
+                              elit, sed do eiusmod tempor incididunt ut labore<br> 
+                              et dolore magna aliqua.
+                            </p>
+                          </div>
+                          <img src="/img/testimonials/quote.svg" alt="" class="quote">
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul class="testimonials__list">
+                        <li class="testimonials__item">
+                          <div class="box-img">
+                            <img
+                              class="testimonials__item--img"
+                              src="/img/testimonials/first-img.jpg"
+                              alt="Louis Saville"
+                              width="130"
+                            />
+                          </div>
+            
+                          <div class="box-content">
+                            <h3 class="testimonials__item--title">
+                              Louis Saville2 <span class="testimonials__item--sub">/CEO at Google inc</span>
+                            </h3>
+                            <p class="testimonials__item--text">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing<br> 
+                              elit, sed do eiusmod tempor incididunt ut labore<br> 
+                              et dolore magna aliqua.
+                            </p>
+                          </div>
+                          <img src="/img/testimonials/quote.svg" alt="" class="quote">
+                        </li>
+            
+                        <li class="testimonials__item">
+                          <div class="box-img">
+                            <img
+                              class="testimonials__item--img"
+                              src="/img/testimonials/second-img.jpg"
+                              alt="Rekha Varadwaz"
+                              width="130"
+                            />
+                          </div>
+            
+                          <div class="box-content">
+                            <h3 class="testimonials__item--title">
+                              Rekha Varadwaz2 <span class="testimonials__item--sub">/Manager at Nike inc</span>
+                            </h3>
+                            <p class="testimonials__item--text">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing<br> 
+                              elit, sed do eiusmod tempor incididunt ut labore<br> 
+                              et dolore magna aliqua.
+                            </p>
+                          </div>
+                          <img src="/img/testimonials/quote.svg" alt="" class="quote">
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul class="testimonials__list">
+                        <li class="testimonials__item">
+                          <div class="box-img">
+                            <img
+                              class="testimonials__item--img"
+                              src="/img/testimonials/first-img.jpg"
+                              alt="Louis Saville"
+                              width="130"
+                            />
+                          </div>
+            
+                          <div class="box-content">
+                            <h3 class="testimonials__item--title">
+                              Louis Saville3 <span class="testimonials__item--sub">/CEO at Google inc</span>
+                            </h3>
+                            <p class="testimonials__item--text">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing<br> 
+                              elit, sed do eiusmod tempor incididunt ut labore<br> 
+                              et dolore magna aliqua.
+                            </p>
+                          </div>
+                          <img src="/img/testimonials/quote.svg" alt="" class="quote">
+                        </li>
+            
+                        <li class="testimonials__item">
+                          <div class="box-img">
+                            <img
+                              class="testimonials__item--img"
+                              src="/img/testimonials/second-img.jpg"
+                              alt="Rekha Varadwaz"
+                              width="130"
+                            />
+                          </div>
+            
+                          <div class="box-content">
+                            <h3 class="testimonials__item--title">
+                              Rekha Varadwaz3 <span class="testimonials__item--sub">/Manager at Nike inc</span>
+                            </h3>
+                            <p class="testimonials__item--text">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing<br> 
+                              elit, sed do eiusmod tempor incididunt ut labore<br> 
+                              et dolore magna aliqua.
+                            </p>
+                          </div>
+                          <img src="/img/testimonials/quote.svg" alt="" class="quote">
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section class="news">
+            <div class="container">
+                <h5 class="news-characteristic">
+                    LATEST NEWS
+                </h5>
+                <h2 class="news-header">
+                    From Our Blog
+                </h2>
+
+                <div class="news-wrapper">
+                    <div class="news-block">
+                         <div class="news-block__img">
+                            <img src="./img/news/news-img1.jpg" alt="news-img1" class="block-img">
+                         </div>
+
+                         <div class="news-block__descr">
+                            <p class="news-block__main">
+                                2020 Interior Design Trends
+                            </p>
+                            <p class="news-block__subdescr">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <a href="#" class="news-link">CONTINUE READING....</a>
+                         </div>
+                    </div>
+
+                    <div class="news-block">
+                        <div class="news-block__img">
+                            <img src="./img/news/news-img2.jpg" alt="news-img2" class="block-img">
+                        </div>
+
+                        <div class="news-block__descr">
+                            <p class="news-block__main">
+                                28 Notable Product at ARC Interior Design
+                            </p>
+                            <p class="news-block__subdescr">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <a href="#" class="news-link">CONTINUE READING....</a>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <div class="container">
+                <h3 class="subscribe-header">
+                    DON’T FORGET TO SIGN UP
+                </h3>
+                <p class="subscribe-text">
+                    Find out early about all upcoming promotions and new product releases with<br>
+                    our newsletter.
+                </p>
+
+                <div class="subscribe-wrapper">
+                    <form class="form">
+                        <div class="form-input__block">
+                            <input
+                                class="form-input__name"
+                                type="text"
+                                name="name"
+                                placeholder="Enter your name....."
+                            />
+                            <input
+                                class="form-input__surname"
+                                type="text"
+                                name="surname"
+                                placeholder="Enter your surname....."
+                            />
+                        </div>
+
+                        <p>
+                            <input
+                                class="form-input__mail"
+                                type="email"
+                                name="mail"
+                                placeholder="Enter your email....."
+                            />
+                        </p>    
+
+                        <button class="form__btn" type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+          <div class="container">
+            <div class="footer-wrapper">
+              <div class="logo__body">
+                <a class="logo__footer" href="#">
+                  <img
+                    src="./img/header/logo.png"
+                    alt="logo"
+                    width="151"
+                  />
+                </a>
+                <p class="footer__text">
+                  But i must explain to you all this mistaken<br> 
+                  idea of dencouncing pleasure.
+                </p>
+              </div>
+    
+              <div class="quick">
+                <b class="footer__title">Quick Links</b>
+                <ul class="quick__list">
+                  <li class="quick__item">
+                    <a class="quick__link" href="#">About Our Company</a>
+                  </li>
+                  <li class="quick__item">
+                    <a class="quick__link" href="#">Services WE provide</a>
+                  </li>
+                  <li class="quick__item">
+                    <a class="quick__link" href="#">Career & Opportunity</a>
+                  </li>
+                  <li class="quick__item">
+                    <a class="quick__link" href="#">Privacy & policy</a>
+                  </li>
+                  <li class="quick__item">
+                    <a class="quick__link" href="#">Contact US</a>
+                  </li>
+                </ul>
+              </div>
+    
+              <div class="company">
+                <b class="footer__title">Company</b>
+                <ul class="company__list">
+                  <li class="company__item">
+                    <a class="company__link" href="#">About Company</a>
+                  </li>
+                  <li class="company__item">
+                    <a class="company__link" href="#">Our Testimonials</a>
+                  </li>
+                  <li class="company__item">
+                    <a class="company__link" href="#">Latest News</a>
+                  </li>
+                  <li class="company__item">
+                    <a class="company__link" href="#">Our misson</a>
+                  </li>
+                  <li class="company__item">
+                    <a class="company__link" href="#">Get a free Quot</a>
+                  </li>
+                </ul>
+              </div>
+    
+              <div class="contact">
+                <b class="footer__title">Contact us</b>
+                <address>
+                  <ul class="contact__list">
+                    <li class="contact__item">
+                      <a class="contact__link" href="#">Sagrada Familia, Herba</a>
+                    </li>
+                    <li class="contact__item">
+                      <a class="contact__link" href="#">Street Front USA</a>
+                    </li>
+                    <li class="contact__item">
+                      <a class="contact__link" href="#">brandoxide@gmail.com</a>
+                    </li>
+                    <li class="contact__item">
+                      <a class="contact__link" href="#">002-568423591</a>
+                    </li>
+                  </ul>
+                </address>
+              </div>
+    
+              <div class="follow">
+                <b class="footer__title">Follow Us</b>
+                <ul class="follow__list">
+                  <li class="follow__item">
+                    <a class="follow__link" href="">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                  </li>
+    
+                  <li class="follow__item">
+                    <a class="follow__link" href="">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </li>
+    
+                  <li class="follow__item">
+                    <a class="follow__link" href="">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </li>
+    
+                  <li class="follow__item">
+                    <a class="follow__link" href="">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="copy">
+              <p class="footer__copy">
+                Copyright 2020 <span class="footer__copy--color">Brandoxide</span>.all right
+                reserved.
+              </p>
+            </div>
+          </div>
+        </footer>
+    </main>
+    <script ></script>
+    <script src="https://kit.fontawesome.com/cedbfe5643.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

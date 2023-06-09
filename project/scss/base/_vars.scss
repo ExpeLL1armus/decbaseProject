@@ -1,0 +1,31 @@
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+$font-main: 'Open Sans', sans-serif;
+$font-header: 'Poppins', sans-serif;
+$font-mail: 'Raleway', sans-serif;
+
+@mixin subheader {
+    font-size: 16px;
+    color: #646464;
+    text-transform: uppercase;
+}
+
+@mixin link {
+    background-color: #37806B;
+    border-radius: 15px 0px;
+    border: none;
+    color: #fff;
+    padding: 5px 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@mixin transition($tipe) {
+    transition-property: $tipe;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
